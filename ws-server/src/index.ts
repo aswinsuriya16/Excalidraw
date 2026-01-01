@@ -1,7 +1,7 @@
 import WebSocket, { WebSocketServer } from 'ws';
 
 const wss = new WebSocketServer({
-    port : 8080
+    port : 8081
 })
 
 wss.on('connection',(ws)=>{
