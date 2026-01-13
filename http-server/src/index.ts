@@ -1,7 +1,7 @@
 import express from "express";
 import {z} from "zod";
-import {jwt} from "jsonwebtoken";
-
+//import {jwt} from "jsonwebtoken";
+import prismaClient from "../../db"
 const app = express();
 
 app.use(express.json());
@@ -30,6 +30,7 @@ app.post("/signup",(req,res)=>{
     // console.log(parsedBody.data);
 
     const {username,password,email} = parsedBody.data;
+
 
 });
 
